@@ -64,7 +64,9 @@ void main() {
         //  Also works: `echo '\t\t\t%'` prints a '%' 3 tabs right.
         //  Or this works: `echo '\x1B[1;10H%'` or `echo '\x1B[5;20H%'` in ZSH/Warp
         //  but not in bash.
-        //  see: https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+        //  see: https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296798
+        //  see also: https://stackoverflow.com/a/46084156/1512790 for control character
+        //  printing options
         //  The trick is using the pseudoterminal as a tty canvas, that is, accessing
         //  its stdin and stdout directly and capturing the pseudoterminal's resulting
         //  display, rather than pseudo-entering bash commands.
